@@ -3,7 +3,6 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container text-center">
         <h1 class="mt-5 display-4 fw-bolder">Indopak Mushaf</h1>
-        <p class="lead">Baca Al-Quran dengan berbagai macam mushaf</p>
       </div>
     </div>
     <div class="content-surah ms-5">
