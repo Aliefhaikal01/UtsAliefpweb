@@ -2,15 +2,13 @@
 <template>
   <main>
 
-    <div class="jumbotron jumbotron-fluid mt-5">
-      <div class="container text-right">
+    <div class="jumbotron jumbotron-fluid md-5">
+      <div class="container text-center">
         <br>
         <h1 class="mt-5 display-4 fw-bolder ">Surah-surah</h1>
-        <p class="i">baca dimana saja dan kapan saja</p>
+        <br/>
       </div>
     </div>
-
-
 
     <div class="content-surah mx-5">
       <div class="row">
@@ -20,7 +18,7 @@
                   <div class="media-body m-auto text-center">
                     <h5 class="card-title">{{ chapter.name_simple }}</h5>
                     <p class="card-text">{{ chapter.translated_name.name }}</p>
-                    <router-link :to="{ name: 'iqra', params: { id: chapter.id } }" class="btn btn-outline-dark">Iqra </router-link>
+                    <router-link :to="{ name: 'iqra', params: { id: chapter.id } }" class="btn btn-outline-primary btn-info text-white">Iqra </router-link>
                   </div>
                 </div>
             </div>
@@ -33,6 +31,7 @@
 </template>
 
 <script>
+
 import { ref, watch } from "vue";
 import axios from "axios";
 export default {
@@ -87,18 +86,8 @@ export default {
   },
 };
 </script>
-<style scoped>
-a{
-  font-family: monospace;
-  font-size: large;
+<style>
+.card-content{
+  background: aquamarine ;
 }
-body {
-  padding: 0;
-  margin: 0;
-
-}
-h1 {
-  color: goldenrod;
-}
-
 </style>
