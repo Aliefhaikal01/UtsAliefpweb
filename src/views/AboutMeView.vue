@@ -11,7 +11,7 @@
       <br/>
       <h5>Web ini saya buat menggunankan API, VueJS dan Bootstrap 5</h5>
       <p class="paragraf text-capitalize text-black "  >API ayat ini bisa di dapatkan di :</p>
-      <a class="link text-capitalize text-black"  href="https://api.quran.com/">APIQURAN.COM</a>
+      <a class="link text-capitalize text-black"  href="https://quran.api-docs.io/">APIQURAN.COM</a>
       <br/>
     </div>
   </div>

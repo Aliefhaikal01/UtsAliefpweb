@@ -5,7 +5,7 @@
         <strong>Random Ayat</strong>
       </h1>
       <p class="paragraf text-capitalize text-black "  >API ayat ini bisa di dapatkan di :</p>
-      <a class="link text-capitalize text-black"  href="https://api.quran.com/">APIQURAN.COM</a>
+      <a class="link text-capitalize text-black"  href="https://quran.api-docs.io/">APIQURAN.COM</a>
     </div>
   </section>
   <section class="content">

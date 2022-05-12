@@ -22,7 +22,7 @@ export default {
               </li>
 
               <li class="nav-item">
-                <Router-link class="nav-link text-black active" aria-current="page" to="/mushaf"><div class="txt">Mushaf</div></Router-link>
+                <Router-link class="nav-link text-black active" aria-current="page" to="/mushaf"><div class="txt">Indopak Mushaf</div></Router-link>
               </li>
               <li class="nav-item">
                 <Router-link class="nav-link text-black active" aria-current="page" to="/aboutme"><div class="txt">About</div></Router-link>
