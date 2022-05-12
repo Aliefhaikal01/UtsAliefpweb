@@ -85,7 +85,7 @@ export default {
 </script>
 <style scoped>
 .card {
-  background-color: #724c44;
+  background-color: aquamarine;
 }
 </style>
 >
