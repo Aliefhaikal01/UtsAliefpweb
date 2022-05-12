@@ -29,9 +29,9 @@ const router = createRouter({
       component: () => import("../views/AboutMeView.vue"),
     },
     {
-      path: "/logo",
-      name: "logo",
-      component: () => import("../views/LogoView.vue"),
+      path: "/quran",
+      name: "quran",
+      component: () => import("../views/QuranView.vue"),
     },
     {
       path: "/mushaf",

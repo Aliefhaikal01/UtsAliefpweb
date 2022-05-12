@@ -1,93 +1,14 @@
-
 <template>
-  <main>
-
-    <div class="jumbotron jumbotron-fluid md-5">
-      <div class="container text-center">
-        <br>
-        <h1 class="mt-5 display-4 fw-bolder ">Surah-surah</h1>
-        <br/>
-      </div>
+  <div class="jumbotron jumbotron-fluid md-5">
+    <div class="container text-center">
+      <br>
+      <h1 class="display-4 fw-bolder ">Welcome To</h1>
+      <h2 class= "display-4 fw-bolder">Al-Quran Simple</h2>
+      <img src="../assets/navbarquran.png" class="rounded-circle" width="100" height="100"  >
+      <h2>ِبِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</h2>
+      <h3>Untuk Menulusuri Surah-Surah Al-Quran ada di page Quran</h3>
+      <br/>
+      <h5>Semoga Web ini dapat Membantu teman teman dalam membaca menghafal dan mengamalkannya</h5>
     </div>
-
-    <div class="content-surah mx-5">
-      <div class="row">
-        <div class="col-xl-3 col-sm-6 col-12 p-1" v-for="(chapter, index) in filterSurah" :key="index">
-            <div class="card-content">
-                <div class="media d-flex">
-                  <div class="media-body m-auto text-center">
-                    <h5 class="card-title">{{ chapter.name_simple }}</h5>
-                    <p class="card-text">{{ chapter.translated_name.name }}</p>
-                    <router-link :to="{ name: 'iqra', params: { id: chapter.id } }" class="btn btn-outline-primary btn-info text-white">Iqra </router-link>
-                  </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-
-
-  </main>
+  </div>
 </template>
-
-<script>
-
-import { ref, watch } from "vue";
-import axios from "axios";
-export default {
-  data() {
-    return {
-      nomor: "1",
-      judul: "",
-      arti: "",
-      listSurah: ref([]),
-      namaSurah: "",
-      search: "",
-    };
-  },
-  watch: {
-    nomor() {
-      this.getSurah();
-    },
-  },
-  mounted() {
-    this.getSurah();
-    this.getlistSurah();
-  },
-  methods: {
-    getSurah() {
-      axios
-        .get(`https://api.quran.com/api/v4/chapters/${this.nomor}?language=id`)
-        .then((response) => {
-          this.judul = response.data.chapter;
-          this.arti = this.judul.translated_name;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-    getlistSurah() {
-      axios
-        .get(`https://api.quran.com/api/v4/chapters?language=id`)
-        .then((response) => {
-          this.listSurah = response.data.chapters;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-  },
-  computed: {
-    filterSurah: function () {
-      return this.listSurah.filter((listSurah) => {
-        return listSurah.name_simple.toLowerCase().split("-").join(" ").match(this.search);
-      });
-    },
-  },
-};
-</script>
-<style>
-.card-content{
-  background: aquamarine ;
-}
-</style>
