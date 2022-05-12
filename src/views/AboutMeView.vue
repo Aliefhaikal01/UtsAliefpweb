@@ -3,7 +3,7 @@
     <div class="container text-center">
       <br>
       <h1 class="mt-5 display-4 fw-bolder ">About Me</h1>
-      <img src="../assets/aliefaja.JPG" class="rounded-circle" width="100" height="100"  >
+      <img src="../assets/alip2.jpeg" class="rounded-circle" width="100" height="100"  >
       <h1>Web ini saya buat untuk menyelesaikan UTS dari mata kuliah Web</h1>
       <br/>
       <h3>Perkenalkan nama saya</h3>
